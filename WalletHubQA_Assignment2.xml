@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" verbose="1" parallel="false">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="baseURL" value="https://wallethub.com/profile/test_insurance_company/"/>
+    <parameter name="userName" value="NA"/>
+    <parameter name="password" value="NA"/>
+    <parameter name="review"
+               value="Some quotes from Steve Jobs.I want to put a ding in the universe.Design is not just what it looks like and feels like. Design is how it works. Innovation distinguishes between a leader and a follower."/>
+    <test name="Review Test(s)">
+        <classes>
+            <class name="tests.walletHub.ValidateReview"/>
+        </classes>
+    </test>
+</suite>

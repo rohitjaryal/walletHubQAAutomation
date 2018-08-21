@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" verbose="1" parallel="false">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="baseURL" value="https://www.facebook.com"/>
+    <parameter name="userName" value="NA"/>
+    <parameter name="password" value="NA"/>
+    <test name="Facebook Post Test(s)">
+        <classes>
+            <class name="tests.facebook.ValidateFacebookPost"/>
+        </classes>
+    </test>
+</suite>
